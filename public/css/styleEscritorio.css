@@ -1,0 +1,14 @@
+body {
+    background-image: url('../imgs/cajasuper.jpg');
+    background-size: cover;
+    background-position-y: -40px;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: rgb(32, 28, 28, 0.7) !important;
+    padding: 25px;
+    color: white;
+}

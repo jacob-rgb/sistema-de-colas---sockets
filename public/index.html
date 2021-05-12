@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programa de Colas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<div class="container indexCont">
+    <h1 class="mt-5">Programa de Colas</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-6">
+
+            <a class="btn btn-primary" href="publico.html">Pantalla publica</a>
+            <a class="btn btn-secondary" href="nuevo-ticket.html">Crear Tickets</a>
+
+            <hr>
+            <h4>Información</h4>
+            <p>Esta aplicación replica el funcionamiento del sistema de colas que suele utilizarse en lugares como supermercados, oficinas e incluso sitios web.</p>
+
+            <h4>Uso</h4>
+            <ol>
+                <li class="mb-1">Para crear tickets únicamente hay que acceder a la pantalla de "crear tickets" (Botón Gris) y pulsar el botón de generar un nuevo ticket.</li>
+                <li class="mb-1">Para observar el estado de la cola, pulse el botón de "pantalla pública"</li>
+                <li class="mb-1">Para atender a los tickets, ingrese un número de caja y pulse el botón "Ingresar"; En la vista del escritorio al que le redirecciona tiene la informacíon de los tickets pendientes y el ticket al que usted está atendiendo en ese momento, así como la opción de atender al siguiente ticket.</li>
+            </ol>
+
+        </div>
+
+        <div class="col-6">
+            <form action="escritorio.html">
+                <label for="escritorio"><h4>Caja a la que desea acceder</h4></label>
+                <hr>
+                <input name="escritorio" 
+                       type="text" 
+                       class="form-control" 
+                       placeholder="Caja" 
+                       autofocus 
+                       required>
+
+                <br>
+                <button type="submit" class="btn btn-primary">
+                    Ingresar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
