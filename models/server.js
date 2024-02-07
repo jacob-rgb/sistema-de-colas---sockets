@@ -12,15 +12,15 @@ class Server {
         this.io     = require('socket.io')( this.server );
 
         this.paths = {};
-
+        
+        // Sockets
+        this.sockets();
+        
         // Middlewares
         this.middlewares();
 
         // Rutas de mi aplicación
         this.routes();
-
-        // Sockets
-        this.sockets();
     }
 
     middlewares() {
